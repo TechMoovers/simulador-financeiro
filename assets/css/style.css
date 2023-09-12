@@ -112,10 +112,6 @@ p {
     transition: .4s;
 }
 
-.calc-input.error {
-    border: 2px solid #c66c6c;
-}
-
 .calc-input:focus {
     outline: none;
 }
