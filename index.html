@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Simulador Financeiro</title>
+</head>
+
+<body>
+    <h1 class="title">Simulador Financeiro</h1>
+
+    <div class="calc-container">
+        <div class="calculator">
+            <h4 class="calc-title">Calcular perda</h4>
+
+            <div>
+                <div class="input-container">
+                    <span class="text-input">Custo por arroba:</span><br>
+                    <input oninput="removeInputWarning()" class="calc-input" type="number" id="inputCustoArroba">
+                </div>
+
+                <div class="input-container">
+                    <span class="text-input">Quantidade de bovinos <b>machos</b> transportados mensalmente:</span><br>
+                    <input oninput="removeInputWarning()" class="calc-input" type="number" id="inputQtdBovinosMachos">
+                </div>
+
+                <div class="input-container">
+                    <span class="text-input">Quantidade de bovinos <b>fêmeas</b> transportados mensalmente:</span><br>
+                    <input oninput="removeInputWarning()" class="calc-input" type="number" id="inputQtdBovinosFemeas">
+                </div>
+            </div>
+
+            <button onclick="calcularPerda()" class="calc-btn">Calcular</button>
+        </div>
+
+        <div class="result">
+            <div class="result-title-container">
+                <h4 class="result-title">Resultado</h4>
+            </div>
+
+            <div class="info-container">
+                <div id="infoPre"></div>
+                <div id="infoPos"></div>
+                <div id="infoArmazenamento"></div>
+                <div id="infoTotal"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
